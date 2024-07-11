@@ -21,7 +21,7 @@ pub type ChatCompletionDelta = ChatCompletionGeneric<ChatCompletionChoiceDelta>;
 pub struct ChatCompletionGeneric<C> {
     pub id: String,
     pub object: String,
-    pub created: u64,
+    pub created: f64,
     pub model: String,
     pub choices: Vec<C>,
     pub usage: Option<Usage>,
